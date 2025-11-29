@@ -1,0 +1,392 @@
+
+<style>
+.id_{{ section.id }}{
+  box-sizing: border-box;
+}
+  
+.id_{{ section.id }} > *{
+  box-sizing: border-box;
+}
+
+.id_{{ section.id }} .container{
+  max-width:1600px;
+  width:100%;
+  margin:0px auto;
+  background-color:#fff5f7;
+   padding:60px 30px;
+}
+
+.id_{{ section.id }} .content{
+  max-width:800px;
+  width:100%;
+  margin:0px auto;
+  text-align: center;
+}
+  
+.id_{{ section.id }} .content h2{
+    color: #000000FF;
+    font-size: 48.3px;
+    font-weight: 500;
+    line-height: 57.96px;
+    letter-spacing: -2.415px;
+    margin:0px 0px 40px;
+}
+  
+.id_{{ section.id }} .content p{
+  margin:0px 0px 30px;
+}
+  
+.id_{{ section.id }} p {
+    color: #000000FF;
+    font-size: 16.1px;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: -0.483px;
+    margin:0px;
+}
+
+.id_{{ section.id }} .cus-row{
+    display:flex;
+    flex-wrap:wrap;
+    gap:50px;
+    margin:40px 0px 0px;
+  }
+  
+.id_{{ section.id }} .cus-col{
+  max-width:calc(50% - 25px);
+  width:100%;
+} 
+
+.id_{{ section.id }} .col-image img,
+.id_{{ section.id }} .col-image svg{
+  display: block;
+  max-width: 100%;
+  width: 100%;
+  aspect-ratio: 1/1;
+  border-radius: 16px;
+  object-fit: cover;
+  overflow: hidden;
+}
+
+.id_{{ section.id }} .accordion-list{
+  border-bottom:1px solid #e2e4e7;
+}
+
+.accordion-title{{ section.id }}{
+    cursor: pointer;
+    display: flex;
+    gap: 8px;
+    position: relative;
+    transition: all 300ms cubic-bezier(0.4, 0, 0.2, 1);
+    align-items: center;
+    justify-content: space-between;
+    font-size: 31.92px;
+    font-weight: 500;
+    line-height: 33.92px;
+    letter-spacing: -1.483px;
+    color:#303030;
+    padding:20px 0px;
+}
+
+.accordion-title{{ section.id }} .icon{
+  display:block;
+  width:24px;
+  height:24px;
+  background-color:#ffc4cb;
+  border-radius: 100%;
+  position: relative;
+}
+  
+.accordion-title{{ section.id }} .icon::after{
+  position: absolute;
+  content: "";
+  width:12px;
+  height:1px;
+  background-color:#000000;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.accordion-title{{ section.id }} .icon::before{
+  position: absolute;
+  content: "";
+  width:1px;
+  height:12px;
+  background-color:#000000;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+   transition: all 300ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.accordion-title{{ section.id }}.active .icon::before {
+    transform: translate(-50%, -50%) rotate(90deg);
+}
+  
+.accordion-title{{ section.id }}.active{
+  letter-spacing:  -0.483px;
+}
+
+
+  
+.id_{{ section.id }} .panel-content {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+}
+  
+.id_{{ section.id }} .list-faq{
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 20px;
+  gap:24px;
+}
+
+.id_{{ section.id }} .list-box{
+  display:flex;
+  gap:8px;
+}
+  
+.id_{{ section.id }} .list-box .icon{
+  max-width:24px;
+  width:100%;
+}
+  
+.id_{{ section.id }} .list-box .icon img{
+  display: block;
+  max-width: 100%;
+  width: 100%;
+  aspect-ratio: 1/1;
+  object-fit: contain;
+}
+
+.id_{{ section.id }} .list-content{
+  max-widt:calc(100% - 32px);
+  width:100%;
+}
+  
+.id_{{ section.id }} h3{
+  color: #000000FF;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 24px;
+  margin:0px 0px 10px;    
+}
+.id_{{ section.id }} .faq-list{
+    padding:40px 0px 0px;
+  }
+
+@media(max-width:767px){
+  
+.id_{{ section.id }} .container{
+   padding:40px 20px;
+}
+
+.id_{{ section.id }} .content h2{
+    font-size: 40px;
+    line-height:48px;
+    margin:0px 0px 24px;
+}
+  
+.id_{{ section.id }} .content p{
+  margin:0px 0px 16px;
+}
+
+.id_{{ section.id }} p {
+    font-size: 16px;
+}
+
+.id_{{ section.id }} .cus-row{
+    gap:24px;
+    margin:24px 0px 0px;
+  }
+  
+.id_{{ section.id }} .cus-col{
+  max-width:100%;
+}
+  
+.accordion-title{{ section.id }}{
+    font-size:16.1px;
+    line-height:24px;
+    padding:16px 0px;
+}
+  
+.accordion-title{{ section.id }} .icon{
+  width:20px;
+  height:20px;
+}
+  
+.accordion-title{{ section.id }} .icon::after{
+  width:10px;
+}
+  
+.accordion-title{{ section.id }} .icon::before{
+  height:10px;
+}
+  
+.id_{{ section.id }} h3{
+  font-size: 16px;
+  line-height: 22px;  
+}  
+  
+.id_{{ section.id }} .faq-list{
+    padding:0px 0px 0px;
+  }
+  
+}
+
+
+  
+</style>
+
+
+
+<section class="id_{{ section.id }}">
+    <div class="container">
+        <div class="content">
+            <h2>{{ section.settings.title }}</h2>
+            <p>{{ section.settings.text }}</p>
+        </div>
+        <div class="cus-row">
+            <div class="cus-col col-image">
+                {% if section.settings.img != blank %}
+                  <img src="{{ section.settings.img | image_url }}" alt="{{ section.settings.img.alt }}" width="100%" height="auto">
+                {% else %}
+                  {{ "image" | placeholder_svg_tag: "placeholder-svg placeholder" }}
+                {% endif %}
+            </div>
+            <div class="cus-col">
+                <div class="faq-list">
+                  {% for block in section.blocks %}
+                    <div class="accordion-list">
+                      <div class="accordion-title{{ section.id }}">{{ block.settings.title }} <div class="icon"></div></div>
+                       <div class="panel-content">
+                         <div class="list-faq"> 
+                           <div class="list-box">
+                              <div class="icon">
+                                {% if section.settings.problem-icon != blank %}
+                                  <img src="{{ section.settings.problem-icon | image_url }}" alt="{{ section.settings.problem-icon.alt }}" width="100%" height="auto">
+                                {% endif %}
+                              </div>
+                             <div class="list-content">
+                                 <h3>Problem</h3>
+                                 <p>{{ block.settings.problem }}</p>
+                             </div>
+                           </div>
+                           <div class="list-box">
+                              <div class="icon">
+                                {% if section.settings.solution-icon != blank %}
+                                  <img src="{{ section.settings.solution-icon | image_url }}" alt="{{ section.settings.solution-icon.alt }}" width="100%" height="auto">
+                                {% endif %}
+                              </div>
+                             <div class="list-content">
+                                 <h3>Solution</h3>
+                                 <p>{{ block.settings.solution }}</p>
+                             </div>
+                           </div>
+                       </div>
+                     </div>
+                    </div>
+                  {% endfor %}
+
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<script>
+  var acc = document.getElementsByClassName("accordion-title{{ section.id }}");
+  var i;
+
+  for (i = 0; i < acc.length; i++) {
+    acc[i].addEventListener("click", function() {
+      var parentList = this.closest(".accordion-list");
+      parentList.classList.toggle("active");
+
+      // Close all panels first
+      var panels = document.getElementsByClassName("panel-content");
+      for (var j = 0; j < panels.length; j++) {
+        if (panels[j] !== this.nextElementSibling) {
+          panels[j].style.maxHeight = null;
+          panels[j].previousElementSibling.classList.remove("active");
+        }
+      }
+
+      this.classList.toggle("active");
+      var panel = this.nextElementSibling;
+      if (panel.style.maxHeight) {
+        panel.style.maxHeight = null;
+      } else {
+        panel.style.maxHeight = panel.scrollHeight + "px";
+      }
+    });
+  }
+</script>
+
+
+{% schema %}
+  {
+    "name": "Faq Section",
+    "settings": [
+      {
+        "type": "text",
+        "label": "Title",
+        "id": "title",
+        "default":"Reduce wrinkles by 36% in just 2 weeks."
+      },
+      {
+        "type": "textarea",
+        "label": "Text",
+        "id": "text",
+        "default":"See how our sleep supplement addresses common sleep issues, ensuring you wake up feeling well-rested, energized, and ready to take on the day."
+      },
+      {
+        "type": "image_picker",
+        "label": "Image",
+        "id": "img"
+      },
+       {
+            "type": "image_picker",
+            "label": "Problem Icon",
+            "id": "problem-icon"
+          },
+          {
+            "type": "image_picker",
+            "label": "Solution Icon",
+            "id": "solution-icon"
+          }
+    ],
+    "blocks": [
+      {
+        "type": "faq",
+        "name": "Faq",
+        "settings": [
+          {
+            "type": "text",
+            "label": "Title",
+            "id": "title",
+            "default":"Stop Snoring, Sleep Peacefully"
+          },
+          {
+            "type": "textarea",
+            "label": "Problem",
+            "id": "problem",
+            "default":"Poor sleep quality and irregular sleep patterns can lead to frequent nighttime disturbances and restless nights."
+          },
+          {
+            "type": "textarea",
+            "label": "Solution",
+            "id": "solution",
+            "default":"Slumberly's natural formula helps you fall asleep faster and maintain deeper, more restful sleep throughout the night."
+          }
+        ]
+      }
+    ],
+    "presets": [
+      {
+        "name": "Faq Section"
+      }
+    ]
+  }
+{% endschema %}
